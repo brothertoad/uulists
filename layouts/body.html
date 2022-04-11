@@ -1,0 +1,32 @@
+{{- define "body" -}}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ .title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="/site.css"/>
+    <link rel="icon" href="/jupiter.ico" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  </head>
+  <body>
+    <div>
+      {{ template "header" . }}
+      <div class="tc">
+        <p>
+          This site contains an inventory of my stash of scale model kits and aftermarket items.
+          It is for my personal use only.
+        </p>
+        <p class="bold">
+          Nothing on this site is for sale.
+        </p>
+      </div>
+      {{ template "content" . }}
+      {{ template "footer" . }}
+    </div>
+  </body>
+</html>
+{{- end -}}
