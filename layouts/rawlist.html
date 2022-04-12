@@ -1,11 +1,15 @@
-{{ define "content "}}
+{{ define "content" }}
 <div class="tc">
   <p class="bold">
     Nothing in this list is for sale.
   </p>
 </div>
 
-<div class="pre-line">
-  {{ include .rawfile }}
+<div class="list-outer">
+  <div class="list-inner">
+    <div class="pre-line">
+      {{ include .rawfile }}
+    </div>
+  </div>
 </div>
 {{ end }}
