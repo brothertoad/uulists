@@ -1,4 +1,5 @@
-{{ define "content" }}
+{% extends "layouts/body.html.j2" %}
+{% block content %}
 <div class="tc">
   <p class="bold">
     Nothing in this list is for sale.
@@ -8,8 +9,8 @@
 <div class="list-outer">
   <div class="list-inner">
     <div class="pre-line">
-      {{ include .rawfile }}
+      {% include rawfile %}
     </div>
   </div>
 </div>
-{{ end }}
+{% endblock %}

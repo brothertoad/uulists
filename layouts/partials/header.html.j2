@@ -1,13 +1,11 @@
-{{- define "header" -}}
 <div>
   <header>
-    <h1>{{ .title }}</h1>
-    {{ if not .atHome }}
+    <h1>{{ title }}</h1>
+    {% if not page.atHome %}
       <div class="tc">
         <a class="embedded-link" href="/">Home</a>
       </div>
-    {{ end }}
+    {% endif %}
   </header>
   <hr>
 </div>
-{{- end -}}

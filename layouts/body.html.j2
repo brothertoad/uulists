@@ -1,8 +1,7 @@
-{{- define "body" -}}
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ .title }}</title>
+    <title>{{ title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="/site.css"/>
@@ -13,10 +12,9 @@
   </head>
   <body>
     <div>
-      {{ template "header" . }}
-      {{ template "content" . }}
-      {{ template "footer" . }}
+      {% include "layouts/partials/header.html.j2" %}
+      {% block content %}{% endblock %}
+      {% include "layouts/partials/footer.html.j2" %}
     </div>
   </body>
 </html>
-{{- end -}}

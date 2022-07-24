@@ -1,9 +1,10 @@
 ---
 title: uulists
-layout: body
-atHome: true
+page:
+  atHome: true
 ---
-{{define "content"}}
+{% extends "layouts/body.html.j2" %}
+{% block content %}
 <div class="tc">
   <p>
     This site contains an inventory of my stash of scale model kits and aftermarket items.
@@ -28,4 +29,4 @@ atHome: true
     </div>
   </div>
 </div>
-{{end}}
+{% endblock %}
