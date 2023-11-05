@@ -4,5 +4,6 @@
   # - one
   # - two
   # - three
+pre: ./pre.sh
 post: ./post.sh
 # templateFormat: go
