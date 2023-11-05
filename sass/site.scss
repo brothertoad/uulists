@@ -51,6 +51,21 @@ h1 {
 .uutable {
   margin: auto;
   width: auto;
+  padding: 5px 5px;
+}
+
+@mixin cellpadding {
+  padding: 5px 5px;
+}
+
+.tleft {
+  @include cellpadding;
+  text-align: left;
+}
+
+.tright {
+  @include cellpadding;
+  text-align: right;
 }
 
 // Generic classes
