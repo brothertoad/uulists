@@ -68,6 +68,37 @@ h1 {
   text-align: right;
 }
 
+// Beck classes
+
+@mixin beck-common {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+}
+
+@mixin beck-td-common {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.beck-table {
+  @include beck-common;
+}
+
+.beck-row {
+}
+
+.beck-reason {
+  @include beck-common;
+  @include beck-td-common;
+}
+
+.beck-importance {
+  @include beck-common;
+  @include beck-td-common;
+}
+
 // Generic classes
 
 .row-parent {
