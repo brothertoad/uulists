@@ -5,9 +5,11 @@ title: Beck Diet
 {% block content %}
 {%- import "layouts/macros.html.j2" as m -%}
 <h3 class="header3">Advantages Response Card</h3>
-<table class="w-80 beck-table">
-  {% for r in reasons %}
-  <tr class="beck-row"><td class="beck-reason xorange">{{ r.reason }}</td><td class="tc beck-importance xgreen">{{ r.importance }}</td></tr>
-  {% endfor %}
+<div class="list-outer">
+	<table class="w-80 beck-table">
+		{% for r in reasons %}
+		<tr class="beck-row"><td class="beck-reason xorange">{{ r.reason }}</td><td class="tc beck-importance xgreen">{{ r.importance }}</td></tr>
+		{% endfor %}
 </table>
+</div>
 {% endblock %}
