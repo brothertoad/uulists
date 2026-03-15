@@ -14,15 +14,19 @@ $link-text: #EDF5E1;
   $grey-dark: $brown,
   $grey-light: $beige-light,
   $primary: #05386B,
-  // $link: #EDF5E1,
   $control-border-width: 2px,
   $input-shadow: none,
   $title-color: #EDF5E1,
+  $body-color: #EDF5E1,
   $body-background-color: rgba(0,0,0,0)
 );
 
 a:hover {
   text-decoration: underline;
+}
+
+a:visited {
+  color: $link-text;
 }
 
 // Import the Google Font
