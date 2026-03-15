@@ -6,19 +6,24 @@ $brown: #757763;
 $beige-light: #d0d1cd;
 $beige-lighter: #eff0eb;
 
+$link-text: #EDF5E1;
+
 // Path to Bulma's sass folder
 @use "bulma/sass" with (
   $family-primary: '"Noto Sans", sans-serif',
   $grey-dark: $brown,
   $grey-light: $beige-light,
-  // $primary: $purple,
   $primary: #05386B,
-  $link: $pink,
+  // $link: #EDF5E1,
   $control-border-width: 2px,
   $input-shadow: none,
   $title-color: #EDF5E1,
   $body-background-color: rgba(0,0,0,0)
 );
+
+a:hover {
+  text-decoration: underline;
+}
 
 // Import the Google Font
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700");
