@@ -6,23 +6,26 @@ $brown: #757763;
 $beige-light: #d0d1cd;
 $beige-lighter: #eff0eb;
 
-$link-text: #EDF5E1;
+$bluebg: #05386b;
+$whitetext: #edf5e1;
+
+$link-text: $whitetext;
 
 // Path to Bulma's sass folder
 @use "bulma/sass" with (
   $family-primary: '"Noto Sans", "Open Sans", Arial, sans-serif',
   $grey-dark: $brown,
   $grey-light: $beige-light,
-  $primary: #05386B,
+  $primary: $bluebg,
   $control-border-width: 2px,
   $input-shadow: none,
-  $title-color: #EDF5E1,
-  $body-color: #EDF5E1,
+  $title-color: $whitetext,
+  $body-color: $whitetext,
   $body-background-color: rgba(0,0,0,0),
-  $table-color: #EDF5E1,
-  $table-background-color: #05386B,
+  $table-color: $whitetext,
+  $table-background-color: $bluebg,
   // $table-cell-border-style: none,
-  $table-cell-border-color: #EDF5E1
+  $table-cell-border-color: $whitetext
 );
 
 a:hover {
