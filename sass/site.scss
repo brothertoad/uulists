@@ -29,10 +29,6 @@ h1 {
   @include centered;
 }
 
-@mixin cellpadding {
-  padding: 5px 5px;
-}
-
 // Generic classes
 
 .link {
