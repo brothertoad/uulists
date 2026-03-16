@@ -122,17 +122,6 @@ h1 {
   align-items: flex-start;
 }
 
-.list-outer {
-  @include left-align;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.list-inner {
-  width: auto;
-}
-
 .link {
   display: block;
   text-decoration: none;
