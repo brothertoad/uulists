@@ -32,14 +32,6 @@ body {
   text-align: center;
 }
 
-.pre-line {
-  white-space: pre-line;
-}
-
-.bold {
-  font-weight: bold;
-}
-
 .tc {
   @include centered;
 }
