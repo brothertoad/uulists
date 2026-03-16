@@ -7,10 +7,6 @@ input[type=date]::-webkit-inner-spin-button {
   text-align: center;
 }
 
-.tc {
-  @include centered;
-}
-
 h1 {
   @include centered;
 }
