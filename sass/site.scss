@@ -3,11 +3,6 @@ input[type=date]::-webkit-inner-spin-button {
     display: none;
 }
 
-@mixin link-color {
-  // The color below is from number 4 on https://visme.co/blog/website-color-schemes/
-  color: #EDF5E1;
-}
-
 @mixin centered {
   text-align: center;
 }
@@ -18,29 +13,4 @@ input[type=date]::-webkit-inner-spin-button {
 
 h1 {
   @include centered;
-}
-
-// Generic classes
-
-.link {
-  display: block;
-  text-decoration: none;
-  transition: color .15s ease-in;
-  @include centered;
-  @include link-color;
-}
-
-.link:hover {
-    text-decoration: underline;
-}
-
-.link:focus {
-    text-decoration: underline;
-}
-.link:link, .link:visited {
-    transition: color .15s ease-in;
-}
-
-.link:active {
-    transition: color .15s ease-in;
 }
