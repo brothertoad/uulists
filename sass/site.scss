@@ -33,16 +33,6 @@ h1 {
   padding: 5px 5px;
 }
 
-.tleft {
-  @include cellpadding;
-  text-align: left;
-}
-
-.tright {
-  @include cellpadding;
-  text-align: right;
-}
-
 // Beck classes
 
 @mixin beck-common {
@@ -72,22 +62,6 @@ h1 {
 }
 
 // Generic classes
-
-.row-parent {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-}
-
-.row-parent-space-between {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
-}
 
 .link {
   display: block;
