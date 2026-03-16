@@ -8,9 +8,9 @@ title: Beck Diet
 <h3 class="header3">Advantages Response Card</h3>
 </div>
 <div class="block">
-	<table class="w-80 beck-table">
+	<table class="table is-bordered">
 		{% for r in reasons %}
-		<tr><td class="beck-reason">{{ r.reason }}</td><td class="tc beck-importance">{{ r.importance }}</td></tr>
+		<tr><td>{{ r.reason }}</td><td class="tc">{{ r.importance }}</td></tr>
 		{% endfor %}
 </table>
 </div>

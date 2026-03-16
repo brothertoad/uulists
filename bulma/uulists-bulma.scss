@@ -21,7 +21,8 @@ $link-text: #EDF5E1;
   $body-background-color: rgba(0,0,0,0),
   $table-color: #EDF5E1,
   $table-background-color: #05386B,
-  $table-cell-border-style: none
+  // $table-cell-border-style: none,
+  $table-cell-border-color: #EDF5E1
 );
 
 a:hover {

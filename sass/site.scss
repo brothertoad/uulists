@@ -51,16 +51,6 @@ h1 {
   @include beck-common;
 }
 
-.beck-reason {
-  @include beck-common;
-  @include beck-td-common;
-}
-
-.beck-importance {
-  @include beck-common;
-  @include beck-td-common;
-}
-
 // Generic classes
 
 .link {
