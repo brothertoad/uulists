@@ -7,9 +7,6 @@ input[type=date]::-webkit-inner-spin-button {
   // The color below is from number 4 on https://visme.co/blog/website-color-schemes/
   color: #EDF5E1;
 }
-@mixin left-align {
-  text-align: left;
-}
 
 @media print {
    .noprint {
