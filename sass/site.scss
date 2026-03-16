@@ -33,24 +33,6 @@ h1 {
   padding: 5px 5px;
 }
 
-// Beck classes
-
-@mixin beck-common {
-  border: 1px solid black;
-  border-collapse: collapse;
-  padding-top: 0.4em;
-  padding-bottom: 0.4em;
-}
-
-@mixin beck-td-common {
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.beck-table {
-  @include beck-common;
-}
-
 // Generic classes
 
 .link {
