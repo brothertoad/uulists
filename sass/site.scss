@@ -8,12 +8,6 @@ input[type=date]::-webkit-inner-spin-button {
   color: #EDF5E1;
 }
 
-@media print {
-   .noprint {
-      visibility: hidden;
-   }
-}
-
 @mixin centered {
   text-align: center;
 }
