@@ -1,4 +1,5 @@
 #!/bin/bash
 
 rsync -a static/ public/
-sass --no-source-map sass:public
+
+$HOME/dart-sass/sass bulma/uulists-bulma.scss public/uulists-bulma.css 
