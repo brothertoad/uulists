@@ -27,27 +27,20 @@ h1 {
   text-decoration: none;
   transition: color .15s ease-in;
   @include centered;
-  /* font-weight: 600; */
   @include link-color;
 }
 
-.embedded-link {
-  text-decoration: none;
-  transition: color .15s ease-in;
-  @include link-color;
-}
-
-.link:hover, .embedded-link:hover {
+.link:hover {
     text-decoration: underline;
 }
 
-.link:focus, .embedded-link:focus {
+.link:focus {
     text-decoration: underline;
 }
-.link:link, .link:visited, .embedded-link:link, .embedded-link:visited {
+.link:link, .link:visited {
     transition: color .15s ease-in;
 }
 
-.link:active, .embedded-link:active {
+.link:active {
     transition: color .15s ease-in;
 }
