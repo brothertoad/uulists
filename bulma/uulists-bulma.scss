@@ -10,7 +10,7 @@ $link-text: #EDF5E1;
 
 // Path to Bulma's sass folder
 @use "bulma/sass" with (
-  $family-primary: '"Noto Sans", sans-serif',
+  $family-primary: '"Noto Sans", "Open Sans", Arial, sans-serif',
   $grey-dark: $brown,
   $grey-light: $beige-light,
   $primary: #05386B,

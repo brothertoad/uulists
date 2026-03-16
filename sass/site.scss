@@ -18,14 +18,8 @@ input[type=date]::-webkit-inner-spin-button {
 }
 
 body {
-  font-family: 'Noto Sans', 'Open Sans', Arial, sans-serif;
   margin-left: 20px;
   margin-right: 20px;
-  /*
-  // The color below is from number 4 on https://visme.co/blog/website-color-schemes/
-  */
-  background: #05386B;
-  @include link-color;
 }
 
 @mixin centered {
