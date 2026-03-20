@@ -5,10 +5,10 @@ title: uulists
 {% block content %}
 <div class="block">
   <div class="columns is-centered">
-    <div class="column has-text-centered">Tasks</div>
-    <div class="column has-text-centered">Goals</div>
-    <div class="column has-text-centered">Audio</div>
-    <div class="column has-text-centered">Lilypond</div>
+    <div class="column button has-text-centered mx-6" onclick="populateBlock('tasks')">Tasks</div>
+    <div class="column button has-text-centered mx-6" onclick="populateBlock('goals')">Goals</div>
+    <div class="column button has-text-centered mx-6" onclick="populateBlock('audio')">Audio</div>
+    <div class="column button has-text-centered mx-6" onclick="populateBlock('lilypond')">Lilypond</div>
   </div>
 </div>
 <div class="block">
@@ -16,7 +16,7 @@ title: uulists
   </div>
 </div>
 <script type="text/javascript">
-  const urlPrefix = ""
+  const urlPrefix = "https://d1dems3vhrlf9r.cloudfront.net/blocks/"
   function populateBlock(blockName) {
     const req = new Request(urlPrefix + blockName);
     fetch(req).then(function(response) {
