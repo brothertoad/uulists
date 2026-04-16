@@ -6,8 +6,8 @@ $brown: #757763;
 $beige-light: #d0d1cd;
 $beige-lighter: #eff0eb;
 
-$bluebg: #05386b;
-$whitetext: #edf5e1;
+// $bluebg: #05386b;
+// $whitetext: #edf5e1;
 
 // $link-text: $whitetext;
 
@@ -24,10 +24,14 @@ $whitetext: #edf5e1;
   $body-color: black,
   $body-background-color: rgba(0,0,0,0),
   // $table-color: $whitetext,
-  $table-background-color: $bluebg,
+  $table-background-color: lightblue,
   // $table-cell-border-style: none,
-  // $table-cell-border-color: $whitetext
+  $table-cell-border-color: black
 );
+
+hr {
+  background-color: black;
+}
 
 a:hover {
   text-decoration: underline;
