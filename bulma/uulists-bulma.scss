@@ -9,23 +9,24 @@ $beige-lighter: #eff0eb;
 $bluebg: #05386b;
 $whitetext: #edf5e1;
 
-$link-text: $whitetext;
+// $link-text: $whitetext;
 
 // Path to Bulma's sass folder
 @use "bulma/sass" with (
   $family-primary: '"Noto Sans", "Open Sans", Arial, sans-serif',
   $grey-dark: $brown,
   $grey-light: $beige-light,
-  $primary: $bluebg,
+  $primary: lightblue,
   $control-border-width: 2px,
   $input-shadow: none,
-  $title-color: $whitetext,
-  $body-color: $whitetext,
+  // $title-color: $whitetext,
+  // $body-color: $whitetext,
+  $body-color: black,
   $body-background-color: rgba(0,0,0,0),
-  $table-color: $whitetext,
+  // $table-color: $whitetext,
   $table-background-color: $bluebg,
   // $table-cell-border-style: none,
-  $table-cell-border-color: $whitetext
+  // $table-cell-border-color: $whitetext
 );
 
 a:hover {
@@ -33,7 +34,7 @@ a:hover {
 }
 
 a:visited, a:-webkit-any-link {
-  color: $link-text;
+  // color: $link-text;
 }
 
 .pre-line {
