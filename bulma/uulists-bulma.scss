@@ -20,8 +20,11 @@ $beige-lighter: #eff0eb;
   $table-cell-border-color: black
 );
 
+// from grok's suggestion
+// https://x.com/i/grok?conversation=2044811781579919721
 hr {
-  background-color: black;
+  border: none;
+  border-top: 2px solid black;
 }
 
 a:hover {
