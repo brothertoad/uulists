@@ -6,6 +6,8 @@ $brown: #757763;
 $beige-light: #d0d1cd;
 $beige-lighter: #eff0eb;
 
+// default colors
+$fg: black;
 $bg: lightblue;
 
 // Path to Bulma's sass folder
@@ -16,17 +18,17 @@ $bg: lightblue;
   $primary: $bg,
   $control-border-width: 2px,
   $input-shadow: none,
-  $body-color: black,
+  $body-color: $fg,
   $body-background-color: rgba(0,0,0,0),
   $table-background-color: $bg,
-  $table-cell-border-color: black
+  $table-cell-border-color: $fg
 );
 
 // from grok's suggestion
 // https://x.com/i/grok?conversation=2044811781579919721
 hr {
   border: none;
-  border-top: 2px solid black;
+  border-top: 2px solid $fg;
 }
 
 a:hover {
