@@ -6,17 +6,19 @@ $brown: #757763;
 $beige-light: #d0d1cd;
 $beige-lighter: #eff0eb;
 
+$bg: lightblue;
+
 // Path to Bulma's sass folder
 @use "bulma/sass" with (
   $family-primary: '"Noto Sans", "Open Sans", Arial, sans-serif',
   $grey-dark: $brown,
   $grey-light: $beige-light,
-  $primary: lightblue,
+  $primary: $bg,
   $control-border-width: 2px,
   $input-shadow: none,
   $body-color: black,
   $body-background-color: rgba(0,0,0,0),
-  $table-background-color: lightblue,
+  $table-background-color: $bg,
   $table-cell-border-color: black
 );
 
