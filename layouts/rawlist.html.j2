@@ -1,12 +1,13 @@
 {% extends "layouts/body.html.j2" %}
 {% block content %}
-<div class="block">
-  <p class="has-text-weight-bold">Nothing in this list is for sale.</p>
-</div>
-
-<div class="block">
-  <div class="pre-line">
-    {% include rawfile %}
+<section class="hcenter">
+  <div class="block">
+    <p class="has-text-weight-bold">Nothing in this list is for sale.</p>
   </div>
-</div>
+  <div class="block">
+    <div class="pre-line">
+      {% include rawfile %}
+    </div>
+  </div>
+</section>
 {% endblock %}
