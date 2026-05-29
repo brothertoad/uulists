@@ -4,14 +4,16 @@ title: Beck Diet
 {% extends "layouts/body.html.j2" %}
 {% block content %}
 {%- import "layouts/macros.html.j2" as m -%}
-<div class="block">
-<h3 class="header3">Advantages Response Card</h3>
-</div>
-<div class="block">
-	<table class="table is-bordered">
-		{% for r in reasons %}
-		<tr><td>{{ r.reason }}</td><td>{{ r.importance }}</td></tr>
-		{% endfor %}
-</table>
-</div>
+<section class="hcenter">
+	<div class="block">
+		<h2 class="header2">Advantages Response Card</h3>
+	</div>
+	<div class="block">
+		<table class="table is-bordered">
+			{% for r in reasons %}
+			<tr><td>{{ r.reason }}</td><td>{{ r.importance }}</td></tr>
+			{% endfor %}
+	</table>
+	</div>
+</section>
 {% endblock %}
