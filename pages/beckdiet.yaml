@@ -15,7 +15,7 @@ reasons:
       reason: Fewer medications.
       importance: Very important
     -
-      reason: I'll do more things.
+      reason: "I'll do more things.  Note: I can start now!"
       importance: Very important
     -
       reason: I'll be happier when I look in the mirror.
