@@ -15,7 +15,9 @@ title: uulists
   </div>
 </div>
 <div class="block hcenter">
-  <div class="pre-line" id="scratchpad">
+  <div>
+    <ul id="blocklist">
+    </ul>
   </div>
 </div>
 <script type="text/javascript">
@@ -24,7 +26,12 @@ title: uulists
     const req = new Request(urlPrefix + blockName);
     fetch(req).then(function(response) {
       response.text().then(function(text) {
-        document.getElementById("scratchpad").innerHTML = text;
+        lines = text.split("\n");
+        inner = ""
+        for (const line of lines) {
+          inner = inner + "<li>" + line + "</li>\n";
+        }
+        document.getElementById("blocklist").innerHTML = inner;
       })
     });
 
