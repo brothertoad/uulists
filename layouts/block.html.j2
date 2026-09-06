@@ -1,0 +1,28 @@
+{% extends "layouts/body.html.j2" %}
+{% block content %}
+<section class="hcenter">
+  <div class="block hcenter">
+    <div>
+      <ul id="blocklist">
+      </ul>
+    </div>
+  </div>
+</section>
+<script type="text/javascript">
+  const urlPrefix = "https://d1dems3vhrlf9r.cloudfront.net/blocks/"
+  function populateBlock(blockName) {
+    const req = new Request(urlPrefix + blockName);
+    fetch(req).then(function(response) {
+      response.text().then(function(text) {
+        lines = text.split("\n");
+        inner = ""
+        for (const line of lines) {
+          inner = inner + "<li>" + line + "</li>\n";
+        }
+        document.getElementById("blocklist").innerHTML = inner;
+      })
+    });
+  }
+  window.onload = populateBlock("{{blockName}}")
+</script>
+{% endblock %}
