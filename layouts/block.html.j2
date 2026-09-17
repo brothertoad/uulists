@@ -10,7 +10,8 @@
   </div>
 </section>
 <script type="text/javascript">
-  const urlPrefix = "https://d1dems3vhrlf9r.cloudfront.net/blocks/"
+  // const urlPrefix = "https://d1dems3vhrlf9r.cloudfront.net/blocks/"
+  const urlPrefix = "https://uumodels.s3.us-west-2.amazonaws.com/blocks/"
   function populateBlock(blockName) {
     const req = new Request(urlPrefix + blockName);
     fetch(req).then(function(response) {
