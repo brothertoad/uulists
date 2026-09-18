@@ -24,6 +24,10 @@ $bg: lightblue;
   $table-cell-border-color: $fg
 );
 
+.fitcontentwidth {
+  width: fit-content;
+}
+
 // from grok's suggestion
 // https://x.com/i/grok?conversation=2060378134667784382
 .hcenter {
