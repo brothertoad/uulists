@@ -3,7 +3,46 @@ title: Book Series
 ---
 {% extends "layouts/body.html.j2" %}
 {% block content %}
+{% import "layouts/macros.html.j2" as m %}
 <div class="block fitcontentwidth mx-auto">
-  Book series go here.
+  <p>
+    &#x2713; &#x21d2; read, &#x2715; &#x21d2 didn't finish, (P) &#x21d2; physical copy, (E) &#x21d2; epub, (K) &#x21d2; in Kindle library
+  </p>
+  <div>
+    {{m.bookseries(bookseries.baldacci)}}
+    {{ m.bookseries(bookseries.blake) }}
+    {{ m.bookseries(bookseries.brandCockrill) }}
+    {{ m.bookseries(bookseries.cannellHaskell) }}
+    {{ m.bookseries(bookseries.cleevesVera) }}
+    {{ m.bookseries(bookseries.crombie) }}
+    {{ m.bookseries(bookseries.dostoyevsky) }}
+    {{ m.bookseries(bookseries.erskine) }}
+    {{ m.bookseries(bookseries.ferrars) }}
+    {{ m.bookseries(bookseries.fluke) }}
+    {{ m.bookseries(bookseries.gerritsen) }}
+    {{ m.bookseries(bookseries.harrisTeagarden) }}
+    {{ m.bookseries(bookseries.harveyResnick) }}
+    {{ m.bookseries(bookseries.horowitz) }}
+    {{ m.bookseries(bookseries.hurwitz) }}
+    {{ m.bookseries(bookseries.indridason) }}
+    {{ m.bookseries(bookseries.kingPeter) }}
+    {{ m.bookseries(bookseries.klavan) }}
+    {{ m.bookseries(bookseries.larsson) }}
+    {{ m.bookseries(bookseries.leese) }}
+    {{ m.bookseries(bookseries.mcgown) }}
+    {{ m.bookseries(bookseries.neel) }}
+    {{ m.bookseries(bookseries.oliver) }}
+    {{ m.bookseries(bookseries.palmer) }}
+    {{ m.bookseries(bookseries.penny) }}
+    {{ m.bookseries(bookseries.scarlett) }}
+    {{ m.bookseries(bookseries.todd) }}
+    {{ m.bookseries(bookseries.ungerJones) }}
+    {{ m.bookseries(bookseries.wodehouse) }}
+    {{ m.bookseries(bookseries.yorke) }}
+    <hr />
+    <p class="book-series-label">Completed series</p>
+    {{ m.bookseries(bookseries.aird) }}
+    {{ m.bookseries(bookseries.cleevesShetland) }}
+  </div>
 </div>
 {% endblock %}
