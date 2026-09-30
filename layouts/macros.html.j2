@@ -13,11 +13,13 @@
 {%- macro linkTo(text,url)-%}<a href="{{url}}">{{text}}</a>{%- endmacro -%}
 
 {% macro bookseries(strings) %}
-    <div class="book-series-label">{{ strings.label | safe }}</div>
-    <ol class="book-series-items">
+  <div class="block">
+    <div class="has-text-weight-bold ml-0">{{ strings.label | safe }}</div>
+    <ol class="ml-6">
       {% for s in strings.strings %}{% if s != null and s != '' %}<li>{{ s | safe }}</li>{% endif %}
       {% endfor %}
     </ol>
+  </div>
 {% endmacro %}
 
 {% macro h3(s) %}

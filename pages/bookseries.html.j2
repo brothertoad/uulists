@@ -5,9 +5,9 @@ title: Book Series
 {% block content %}
 {% import "layouts/macros.html.j2" as m %}
 <div class="block fitcontentwidth mx-auto">
-  <p>
+  <div class="block">
     &#x2713; &#x21d2; read, &#x2715; &#x21d2 didn't finish, (P) &#x21d2; physical copy, (E) &#x21d2; epub, (K) &#x21d2; in Kindle library
-  </p>
+  </div>
   <div>
     {{m.bookseries(bookseries.baldacci)}}
     {{ m.bookseries(bookseries.blake) }}
@@ -40,7 +40,7 @@ title: Book Series
     {{ m.bookseries(bookseries.wodehouse) }}
     {{ m.bookseries(bookseries.yorke) }}
     <hr />
-    <p class="book-series-label">Completed series</p>
+    <div class="block has-text-weight-bold ml-0">Completed series</div>
     {{ m.bookseries(bookseries.aird) }}
     {{ m.bookseries(bookseries.cleevesShetland) }}
   </div>
