@@ -19,7 +19,7 @@ $bg: lightblue;
   $control-border-width: 2px,
   $input-shadow: none,
   $body-color: $fg,
-  $body-background-color: rgba(0,0,0,0),
+  $body-background-color: $bg,
   $table-background-color: $bg,
   $table-cell-border-color: $fg
 );
