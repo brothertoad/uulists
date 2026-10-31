@@ -1,0 +1,16 @@
+---
+title: Completed Book Series
+---
+{% extends "layouts/body.html.j2" %}
+{% block content %}
+{% import "layouts/macros.html.j2" as m %}
+<div class="block fitcontentwidth mx-auto">
+  <div class="block">
+    &#x2713; &#x21d2; read, &#x2715; &#x21d2 didn't finish, (P) &#x21d2; physical copy, (E) &#x21d2; epub, (K) &#x21d2; in Kindle library
+  </div>
+  <div>
+    {{ m.bookseries(bookseries.aird) }}
+    {{ m.bookseries(bookseries.cleevesShetland) }}
+  </div>
+</div>
+{% endblock %}
