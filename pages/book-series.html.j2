@@ -8,7 +8,8 @@ title: Book Series
   <div class="block">
     &#x2713; &#x21d2; read, &#x2715; &#x21d2 didn't finish, (P) &#x21d2; physical copy, (E) &#x21d2; epub, (K) &#x21d2; in Kindle library
   </div>
-  <div>
+  <div class="columns">
+  <div class="column">
     {{ m.bookseries(bookseries.baldacci) }}
     {{ m.bookseries(bookseries.berkeleySheringham) }}
     {{ m.bookseries(bookseries.berkeleyStandalone) }}
@@ -24,6 +25,8 @@ title: Book Series
     {{ m.bookseries(bookseries.gerritsen) }}
     {{ m.bookseries(bookseries.harrisTeagarden) }}
     {{ m.bookseries(bookseries.harveyResnick) }}
+  </div>
+  <div class="column">
     {{ m.bookseries(bookseries.horowitz) }}
     {{ m.bookseries(bookseries.hurwitz) }}
     {{ m.bookseries(bookseries.indridason) }}
@@ -43,6 +46,7 @@ title: Book Series
     {{ m.bookseries(bookseries.ungerJones) }}
     {{ m.bookseries(bookseries.wodehouse) }}
     {{ m.bookseries(bookseries.yorke) }}
+  </div>
   </div>
 </div>
 {% endblock %}
