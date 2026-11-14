@@ -1,7 +1,7 @@
 berkeleySheringham:
   label: Anthony Berkeley (Roger Sheringham)
   strings:
-    - "(E) The Layton Court Mystery"
+    - "&#x2713; The Layton Court Mystery"
     - "The Wynchford Poisoning Case (can skip this one per reviews)"
     - "(E) Roger Sheringham and the Vane Mystery (The Mystery at Lovers Cave)"
     - "The Silk Stocking Murders"
