@@ -16,7 +16,7 @@
     const req = new Request(urlPrefix + blockName);
     fetch(req).then(function(response) {
       response.text().then(function(text) {
-        lines = text.split("\n");
+        lines = catLines(text.split("\n"));
         inner = ""
         for (const line of lines) {
           inner = inner + "<li>" + line + "</li>\n";
@@ -24,6 +24,43 @@
         document.getElementById("blocklist").innerHTML = inner;
       })
     });
+  }
+
+  function catLines(lines) {
+    // Need to check for escaped new lines and concatenate when we find one.
+    cattedLines = new Array()
+    builder = "" // used to build one line
+    prevHadEsc = false // indicates if previous line ended with the escape character
+    for (const line of lines) {
+      if (line.at(-1) == '\\') {
+        segment = line.substring(0, line.length - 1)
+        // If the previous line also had an escape character, then add to builder.
+        // If not, start a new builder.
+        if (prevHadEsc) {
+          builder = builder + segment
+        }
+        else {
+          builder = segment
+        }
+        prevHadEsc = true
+      }
+      else {
+        if (prevHadEsc) {
+          builder = builder + line
+          cattedLines.push(builder)
+          builder = ""
+        }
+        else {
+          cattedLines.push(line)
+        }
+        prevHadEsc = false
+      }
+    }
+    // If the last line ended with the escape character, push the builder.
+    if (prevHadEsc) {
+      cattedLines.push(builder)
+    }
+    return cattedLines
   }
   window.onload = populateBlock("{{blockName}}")
 </script>
