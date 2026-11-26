@@ -1,9 +1,9 @@
 golden:
   label: Alison Golden (Inspector Graham - look for other series)
   strings:
-    - "The Case Of The Screaming Beauty"
-    - "The Case Of The Hidden Flame"
-    - "The Case Of The Fallen Hero"
+    - "&#x2713; The Case Of The Screaming Beauty"
+    - "&#x2713; The Case Of The Hidden Flame"
+    - "&#x2713; The Case Of The Fallen Hero"
     - "The Case Of The Broken Doll"
     - "The Case Of The Missing Letter"
     - "The Case Of The Pretty Lady"
